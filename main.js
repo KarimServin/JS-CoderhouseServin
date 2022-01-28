@@ -1,9 +1,10 @@
 
 alert("Bienvenido al simulador interactivo para calcular los costos de mi trabajo")
+let canth
 
 while(true) {
 
-    let canth=parseInt(prompt("Ingrese la cantidad de horas de trabajo"))
+    canth=parseInt(prompt("Ingrese la cantidad de horas de trabajo"))
 
     if (canth!="") {
 
@@ -20,7 +21,7 @@ while(true) {
 let costo=parseInt(calcularCosto(canth));
 
 alert("hola");
-alert("El costo en base a las horas de trabajo es" + costo + "dolares")
+alert("El costo en base a las horas de trabajo es " + costo + " dolares")
 
 let fp=formaPago();
 
@@ -35,7 +36,7 @@ switch(fp) {
 
 let costoTotal= costo + costoRecargo;
 
-alert("El costo total es" + costoTotal + "dolares, de los cuales" + costoRecargo + "corresponden a impuesto o comision")
+alert("El costo total es $" + costoTotal + " , de los cuales $" + costoRecargo + " corresponden a impuesto o comision")
 //////////////////
 
 function calcularCosto(costo) {
@@ -61,10 +62,11 @@ function calcularComision() {
 function formaPago() {
 
     alert("hola");
+    let fp
 
     while(true) {
 
-        let fp=parseInt(prompt("Como me va a pagar? 1- En blanco, 2- En negro"));
+         fp=parseInt(prompt("Como me va a pagar? 1- En blanco, 2- En negro"));
 
 
     
