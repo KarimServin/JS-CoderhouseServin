@@ -8,3 +8,9 @@
     margin: 3;
     padding: 3;
 }
+
+input {
+    
+    display: grid;
+    margin: auto;
+}
