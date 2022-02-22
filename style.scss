@@ -27,7 +27,7 @@
     
 }
 
-#textred {
+.textred {
 
     color:red;
 }
@@ -78,7 +78,7 @@ h5 {
 }
 
 
-.input1 {
+.defaulttitle {
 
     color: white;
     font-family: 'Times New Roman', Times, serif;
@@ -90,4 +90,10 @@ h5 {
     
     
 
+}
+
+.card-group {
+
+    display: inline-block;
+    margin-inline-start: 15%;
 }

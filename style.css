@@ -20,7 +20,7 @@
   color: white;
 }
 
-#textred {
+.textred {
   color: red;
 }
 
@@ -62,7 +62,7 @@ h5 {
   font-weight: 100;
 }
 
-.input1 {
+.defaulttitle {
   color: white;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
@@ -70,5 +70,11 @@ h5 {
   border: none;
   display: block;
   margin: 0 auto;
+}
+
+.card-group {
+  display: inline-block;
+  -webkit-margin-start: 15%;
+          margin-inline-start: 15%;
 }
 /*# sourceMappingURL=style.css.map */
