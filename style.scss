@@ -93,7 +93,8 @@ h5 {
 }
 
 .card-group {
-
-    display: inline-block;
-    margin-inline-start: 15%;
+    
+    display: flex;
+    justify-content:center;
+    
 }

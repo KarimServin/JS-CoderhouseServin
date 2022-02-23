@@ -73,8 +73,11 @@ h5 {
 }
 
 .card-group {
-  display: inline-block;
-  -webkit-margin-start: 15%;
-          margin-inline-start: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
