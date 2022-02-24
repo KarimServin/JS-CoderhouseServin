@@ -82,6 +82,15 @@ for (const libro of array) { //LOS OBJETOS QUE SE RECORREN DEL ARRAY DE LIBROS S
 
 btnAgregar.addEventListener('click',()=>{
 
+
+
+  Swal.fire({
+    title: 'Una gran elección',
+    text: 'Se ha agregado este libro al carrito',
+    icon: 'success',
+    confirmButtonText: 'Aceptar'
+    })
+    
     agregarCarrito(libro) 
 })
 }
@@ -179,6 +188,13 @@ function agregarCarrito(libro) {
     let removebutton = document.getElementById(`remove${libro.titulo}`)
 
     removebutton.addEventListener('click',()=>{
+
+      Swal.fire({
+        title: 'Atención',
+        text: 'Hemos eliminado este libro del carrito',
+        icon: 'warning',
+        confirmButtonText: 'Aceptar'
+        })
     removebutton.parentElement.remove()                         
       carrito = carrito.filter(book => book.titulo != libro.titulo)
       restarTotal(libro);
