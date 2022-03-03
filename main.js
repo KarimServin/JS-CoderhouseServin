@@ -245,3 +245,10 @@ if (libro.stock==0 || precio==0) {
     }
 
 }
+
+
+
+
+fetch('./data.json')
+  .then(response => response.json())
+  .then(productos => console.log(productos));
