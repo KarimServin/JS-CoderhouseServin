@@ -52,14 +52,14 @@ function desplegarCatalogo(arregloLibros) {
     <p class="card-title text-dark">${libro.autor}</p>
     
     <p class="car-text text-dark">$ ${libro.precio}</p>
-    <button href="#" id="botonAgregar${libro.titulo}" class="btn btn-dark">Comprar</button>
+    <button href="#" id="botonAgregar${libro.id}" class="btn btn-dark">Comprar</button>
     </div>
     </div>`
                   
     contenedorProductos.appendChild(cartaProducto);
 
 
-    let btnAgregar = document.getElementById(`botonAgregar${libro.titulo}`)
+    let btnAgregar = document.getElementById(`botonAgregar${libro.id}`)
   
   
            btnAgregar.addEventListener('click',()=>{
@@ -72,7 +72,7 @@ function desplegarCatalogo(arregloLibros) {
 
 function agregarCarrito(libro) {
    
-    let repetido=carrito.find(objeto => objeto.titulo == libro.titulo)
+    let repetido=carrito.find(objeto => objeto.id == libro.id)
     
     if (repetido) {
 
