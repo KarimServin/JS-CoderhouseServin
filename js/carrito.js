@@ -15,7 +15,7 @@ const itemscarrito = document.getElementById('itemscarrito');
 
 
 
-if(carrito.length==0) {
+if(carrito==null) {
 
     
     carritoVacio()

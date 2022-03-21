@@ -18,10 +18,16 @@ class Libro {
 
 let carrito=[]
 
+
+
+
 carrito=JSON.parse(localStorage.getItem('carrito'))
 
 
 console.log(carrito);
+
+
+
 function guardarEnLocalStorage(carro) {
 //FUNCION QUE PERMITE GUARDAR LA LISTA DE PRODUCTOS EN CARRITO, EN LOCAL STORAGE.        
   localStorage.setItem('carrito', JSON.stringify(carro))     
