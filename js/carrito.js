@@ -7,15 +7,13 @@ let vacio=document.createElement('h2')
 let cont = document.getElementById('contenedorCarrito')
 let tabl = document.getElementById('tabla')
 
-carrito=JSON.parse(localStorage.getItem('carrito'))
+carrito=JSON.parse(localStorage.getItem('carrito')) || []
 
-
+console.log("El carrito")
 const itemscarrito = document.getElementById('itemscarrito');
 
 
-
-
-if(carrito==null) {
+if(carrito.length==0) {
 
     
     carritoVacio()

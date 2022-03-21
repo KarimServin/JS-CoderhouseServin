@@ -19,10 +19,9 @@ class Libro {
 let carrito=[]
 
 
-carrito=JSON.parse(localStorage.getItem('carrito'))
+carrito=JSON.parse(localStorage.getItem('carrito')) || []
 
-
-
+console.log("El catalogo")
 
 
 
