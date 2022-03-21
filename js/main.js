@@ -16,12 +16,14 @@ class Libro {
   }
 
 
+  console.log("El catalogo")
+
 let carrito=[]
 
 
 carrito=JSON.parse(localStorage.getItem('carrito')) || []
 
-console.log("El catalogo")
+console.log(carrito)
 
 
 
